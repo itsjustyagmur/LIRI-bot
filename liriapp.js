@@ -15,11 +15,11 @@ var dotenv = require("dotenv").config();
                 console.log(" We have no information for this Artist at the moment!")
             }else{ 
                 for(var i = 0; i < response.data.length; i++){
-                    console.log("---------------clea--------");
+                    
                     console.log("Venue: " + response.data[i].venue.name);
                     console.log("Location: " + response.data[i].venue.city + ", " + response.data[0].venue.region);
                     console.log("Date Of Concert: " + moment(response.data[i].datetime).format("MM/DD/YYYY"))
-                    console.log("-----------------------");
+                
                 }
             }
 
